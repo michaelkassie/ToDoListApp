@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List (jQuery)</title>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- jQuery UI (for drag-to-reorder) -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1 class="app-title">To-Do List</h1>
+
+    <form id="add-form" autocomplete="off" aria-label="Add a to-do">
+      <label class="visually-hidden" for="todo-input">New item</label>
+      <input id="todo-input" class="input" type="text" placeholder="Add a new item…" />
+      <button id="add-button" class="btn" type="submit" aria-label="Add item">Add</button>
+    </form>
+
+    <p class="hint">Tip: click an item to cross it out. Drag items to reorder. Use “X” to delete.</p>
+
+    <ul id="todo-list" class="list" aria-live="polite"></ul>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
